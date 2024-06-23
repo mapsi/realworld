@@ -1,0 +1,121 @@
+repo_name: mapsi/realworld
+report_id: e3044c2a810f1d05a353b144f9f13a6f
+version: 0.1
+repo_type: Public
+timestamp: '2024-06-23T08:49:46+00:00'
+requested_by: anishkny
+provider: github
+branch: master
+detected_tools_count: 8
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/mapsi/realworld
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/mapsi/realworld
+  detection_source: Repo Metadata
+- name: Travis CI
+  description: A hosted continuous integration service for open source and private
+    projects
+  website_url: http://travis-ci.com/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png
+  detection_source_url: https://github.com/mapsi/realworld/blob/master/.travis.yml
+  detection_source: ".travis.yml"
+  last_updated_by: Eric Simons
+  last_updated_on: 2017-04-19 19:06:02.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/mapsi/realworld/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Eric Simons
+  last_updated_on: 2017-04-19 19:06:02.000000000 Z
+- name: Newman
+  description: CLI collection runner for Postman
+  website_url: https://github.com/postmanlabs/newman
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: API Tools
+  image_url: https://img.stackshare.io/service/3766/10251060.png
+  detection_source_url: https://github.com/mapsi/realworld/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Cameron Chapman
+  last_updated_on: 2017-05-11 00:51:25.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/mapsi/realworld
+  detection_source: Repo Metadata
+- name: axios
+  description: Promise based HTTP client for the browser and node.js
+  website_url: https://github.com/mzabriskie/axios
+  version: 0.18.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/mapsi/realworld/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Anish Karandikar
+  last_updated_on: 2018-05-23 21:55:01.000000000 Z
+- name: js-yaml
+  description: YAML 1.2 parser and serializer
+  package_url: https://www.npmjs.com/js-yaml
+  version: 3.11.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15997/default_f8be85789693a9901dbcfa43c135c60525ae49a1.png
+  detection_source_url: https://github.com/mapsi/realworld/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Anish Karandikar
+  last_updated_on: 2018-05-23 21:55:01.000000000 Z
+  vulnerabilities:
+  - name: Code Injection in js-yaml
+    cve_id:
+    cve_url: https://github.com/advisories/GHSA-8j8c-7jfh-h6hx
+    detected_date: Aug 22
+    severity: high
+    first_patched: 3.13.1
+  - name: Denial of Service in js-yaml
+    cve_id:
+    cve_url: https://github.com/advisories/GHSA-2pr6-76vf-7546
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 3.13.0
